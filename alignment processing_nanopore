@@ -1,0 +1,14 @@
+cp aln_cdna_to_ref_genome.sh aln_cdna_to_ref_genome_SUN_AF.sh 
+cp ncbi-genomes-2022-10-2-/GCF_00633955.1_Cs_genomic.fna ../
+ls 
+mv ../GCF_00633955.1_Cs_genomic.fna .
+mv GCF_000633955.1_Cs_genomic.fna asm.fa 
+ls 
+cp asm.fa SUN_AF_WORK 
+cd SUN_AF_WORK
+ls 
+cp ../aln_cdna_to_ref_genome.sh . 
+ls 
+nano aln_cdna_to_ref_genome.sh 
+sbatch aln_cdna_to_ref_genome.sh 
+sq --me 
